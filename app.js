@@ -15,7 +15,7 @@ var debug = require('debug')('blog:database');
 
 var app = express();
 
-mongoose.connect(process.env.MONGO_URI, {
+/*mongoose.connect(process.env.MONGO_URI, {
   useCreateIndex: true,
   useNewUrlParser: true,
   useUnifiedTopology: true 
@@ -30,6 +30,7 @@ mongoose.connect(process.env.MONGO_URI, {
 
 var MongoClient = require('mongodb').MongoClient
 
+
 MongoClient.connect('mongodb://localhost:27017/animals', function (err, client) {
   if (err) throw err
 
@@ -40,7 +41,7 @@ MongoClient.connect('mongodb://localhost:27017/animals', function (err, client) 
 
     console.log(result)
   })
-})
+})*/
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
