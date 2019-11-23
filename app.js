@@ -10,7 +10,7 @@ var usersRouter = require('./routes/users');
 
 
 var mongoose = require('mongoose');
-var debug = require('debug')('blog:database');
+//var debug = require('debug')('blog:database');
 
 
 var app = express();
